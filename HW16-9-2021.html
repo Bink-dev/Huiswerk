@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+
+<script>
+    // Opdracht 1
+    for(let i = 0; i <= 10; i++){
+        console.log(i);
+    }
+
+    // Opdracht 2
+    for (let i = 2; i <= 500; i = i + 2){
+        console.log(i);
+    }
+
+    // Opdracht 3
+    const arrayOne = [];
+    for(let i = 0; i <= 10; i++){
+        arrayOne.push(i);
+    }
+    console.log(arrayOne);
+
+    // Opdracht 4
+    const arrayFour = [];
+    for (let i = 1; i < arrayOne.length; i++) {
+        arrayFour.push( i + 10);
+    }
+    console.log(arrayFour);
+
+    // Opdracht 5
+    const arrayTwo = [];
+    for (let i = 10; i <= 100; i = i + 2) {
+        arrayTwo.push(i);
+    }
+    console.log(arrayTwo);
+
+    // Opdracht 6
+    const arrayThree = [];
+    for (let i = 0; i < arrayOne.length; i++){
+        arrayThree.push(arrayOne[i] + arrayTwo[i]);
+    }
+    console.log(arrayThree);
+
+    // Opdracht 7
+    function char_count (string, letter){
+        var count = 0;
+        for (var i = 0; i < string.length; i++){
+            if (string.charAt(i) == letter)
+            count += 1;
+        }
+        return count;
+    }
+    console.log(char_count('diederik doolt dolt veel rond', 'd'))
+
+</script>
+
+</body>
+</html>
